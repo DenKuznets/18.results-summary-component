@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  
+const Container = styled.div`
+  max-width: 500px;
+  width: 100%;
+  /* background-color: red; */
+
 `
+
+export default Container

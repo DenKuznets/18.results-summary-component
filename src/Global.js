@@ -75,6 +75,18 @@ select {
     scroll-behavior: auto !important;
   }
 }
+${
+  "" /* ============================== END OF RESETS ============================= */
+}
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+  :root {
+    font-size: 18px;
+  }
+
+  body {
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
 `;
 
 export default GlobalStyles;

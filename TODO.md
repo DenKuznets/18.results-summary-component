@@ -1,0 +1,1 @@
+FLEX что бы центрировал result и summary 
