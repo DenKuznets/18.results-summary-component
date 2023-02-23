@@ -1,15 +1,22 @@
-import './App.css'
-import GlobalStyles from './Global'
+import "./App.css";
+import GlobalStyles from "./Global";
+import { Container } from "./components/styles/Container.styled";
+import { ThemeProvider } from "styled-components";
 
-
-function App() {
-
-  return (
-    <div className="App">
-     <GlobalStyles />
-     HELLO
-    </div>
-  )
+const theme = {
+  mobile: '768px',
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <ThemeProvider theme={theme} />
+      <Container>
+        <GlobalStyles />
+        HELLO
+      </Container>
+    </>
+  );
+}
+
+export default App;
