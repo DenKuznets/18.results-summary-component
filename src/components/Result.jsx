@@ -8,8 +8,9 @@ export default function Result() {
       <Flex>
         <header>Your Result</header>
         <div className="result__score">
-          <Flex>
-            <span>76</span> of 100
+          <Flex className="result__flex">
+            <span className="result__user-score">76</span>{" "}
+            <span className="result__total-score">of 100</span>
           </Flex>
         </div>
         <div className="result__info">

@@ -9,10 +9,10 @@ const theme = {
   mobile: "768px",
   colors: {
     primary: {
-      LighRed: "hsl(0, 100%, 67%)",
-      OrangeyYellow: "hsl(39, 100%, 56%)",
-      GreenTeal: "hsl(166, 100%, 37%)",
-      CobaltBlue: "hsl(234, 85%, 45%)",
+      primary0: "hsl(0, 100%, 67%)",
+      primary1: "hsl(39, 100%, 56%)",
+      primary2: "hsl(166, 100%, 37%)",
+      primary3: "hsl(234, 85%, 45%)",
     },
     neutral: {
       White: "hsl(0, 0%, 100%)",
@@ -30,14 +30,10 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <>
-        <Container>
-          <Flex>
-            <Result />
-            <Summary />
-          </Flex>
-        </Container>
-      </>
+      <Container>
+        <Result />
+        <Summary />
+      </Container>
     </ThemeProvider>
   );
 }
