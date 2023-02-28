@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: center;
   /* padding-bottom: 1rem; */
   /* background-color: red; */
-  @media (min-width: 760px) {
+  @media (min-width: ${({ theme }) => theme.desktop}) {
     max-width: 740px;
     flex-direction: row;
     flex: 1;

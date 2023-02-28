@@ -1,28 +1,30 @@
 import styled from "styled-components";
 
 export const StyledSummary = styled.div`
-  /* background-color: yellow; */
   width: 100%;
-  height: 355px;
-  padding: 1.1rem 1.7rem;
+  padding: 1.1em 1.7em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   @media (min-width: ${({ theme }) => theme.desktop}) {
     height: 515px;
     border-radius: 36px;
     max-width: 370px;
+    justify-content: center;
+    font-size: 26px;
   }
 
   header {
     font-weight: 600;
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+      font-size: 1.3rem;
+    }
   }
 
   .stat-lines-container {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1em 0;
     gap: 18px;
   }
 
@@ -32,34 +34,8 @@ export const StyledSummary = styled.div`
     color: white;
     height: 55px;
     border-radius: 50px;
-    margin-bottom: 1.2rem;
-    margin-top: 0.5rem;
-  }
-`;
-
-export const StatLine = styled.div`
-  display: flex;
-  font-weight: 600;
-  font-size: 0.9rem;
-  align-items: center;
-  padding: 0 1rem;
-  height: 55px;
-  border-radius: 12px;
-  background-color: ${({ theme, index }) =>
-    theme.colors.primary[`primaryAlpha${index}`]};
-
-  .stat-line__stat-img {
-    margin-right: 0.5rem;
-  }
-
-  .stat-line__stat-name {
-    color: ${({ theme, index }) => theme.colors.primary[`primary${index}`]};
-    margin-right: auto;
-  }
-
-  .stat-line__stat-score {
-    span {
-      opacity: 0.5;
-    }
+    margin-bottom: 1.2em;
+    margin-top: 0.5em;
+    font-size: 1rem;    
   }
 `;
