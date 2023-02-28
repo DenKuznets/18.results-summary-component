@@ -3,7 +3,6 @@ import Container from "./components/styles/Container.styled";
 import { ThemeProvider } from "styled-components";
 import Result from "./components/Result";
 import Summary from "./components/Summary";
-import Flex from "./components/styles/Flex.styled";
 
 const theme = {
   desktop: "768px",

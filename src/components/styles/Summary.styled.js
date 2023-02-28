@@ -8,10 +8,11 @@ export const StyledSummary = styled.div`
 
   @media (min-width: ${({ theme }) => theme.desktop}) {
     height: 515px;
-    border-radius: 36px;
     max-width: 370px;
     justify-content: center;
     font-size: 26px;
+    /* border-radius: 0 36px 36px 0; */
+    /* background-color: green; */
   }
 
   header {
