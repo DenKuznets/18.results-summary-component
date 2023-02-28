@@ -6,7 +6,7 @@ import Summary from "./components/Summary";
 import Flex from "./components/styles/Flex.styled";
 
 const theme = {
-  mobile: "768px",
+  desktop: "768px",
   colors: {
     primary: {
       primary0: "hsl(0, 100%, 67%)",

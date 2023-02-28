@@ -5,12 +5,14 @@ export const StyledSummary = styled.div`
   width: 100%;
   height: 355px;
   padding: 1.1rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  @media (min-width: ${({ theme }) => theme.mobile}) {
+  @media (min-width: ${({ theme }) => theme.desktop}) {
     height: 515px;
     border-radius: 36px;
     max-width: 370px;
-    /* padding: 0; */
   }
 
   header {
