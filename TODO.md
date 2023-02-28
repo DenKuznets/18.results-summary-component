@@ -1,1 +1,1 @@
-result score
+stat line opacity разобраться как сделать разную или hsla

@@ -9,22 +9,22 @@ export default function Summary() {
     // console.log(statLine);
     return (
       <StatLine index={index} key={index}>
-        <Flex className="stat-line__container">
+        {/* <Flex className="stat-line__container"> */}
           <img className="stat-line__stat-img" src={statLine.icon} alt="" />
           <div className="stat-line__stat-name">{statLine.category}</div>
           <div className="stat-line__stat-score">
             {statLine.score}
             <span> / 100</span>
           </div>
-        </Flex>
+        {/* </Flex> */}
       </StatLine>
     );
   });
   return (
     <StyledSummary>
-        <header>Summary</header>
-        {statLines}
-        <button>Continue</button>
+      <header>Summary</header>
+      <div className="stat-lines-container">{statLines}</div>
+      <button className="summary__button">Continue</button>
     </StyledSummary>
   );
 }
