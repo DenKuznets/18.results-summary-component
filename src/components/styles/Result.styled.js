@@ -49,7 +49,6 @@ const StyledResult = styled.div`
         opacity: 0.5;
         font-size: 0.9rem;
         @media (min-width: ${({ theme }) => theme.desktop}) {
-          /* font-size: 0.7rem; */
           line-height: 1;
         }
       }
