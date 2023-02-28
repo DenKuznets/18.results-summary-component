@@ -37,6 +37,19 @@ export const StyledSummary = styled.div`
     border-radius: 50px;
     margin-bottom: 1.2em;
     margin-top: 0.5em;
-    font-size: 1rem;    
+    font-size: 1rem;
+    border: none;
+
+    @media (min-width: ${({ theme }) => theme.desktop}) {
+      cursor: pointer;
+    }
+
+    &:hover {
+      background: linear-gradient(${({ theme }) => theme.gradients.result});
+    }
+
+    &:active{
+      transform: scale(.9);
+    }
   }
 `;
